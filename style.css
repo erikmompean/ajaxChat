@@ -1,0 +1,83 @@
+#chat {
+
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+
+}
+
+.container-fluid {
+
+	height: 100vh;
+	padding: 0;
+	margin: 0;
+
+}
+
+#left-chat {
+
+	border-right: solid black;
+	height: 100%;
+
+}
+
+#searchCapsulle {
+
+	padding: 4%;
+	text-align: middle;
+	vertical-align: center;
+	height: 100px;
+	width: 100%;
+	border-bottom: solid black;
+
+}
+
+.contact {
+
+	height: 60px;
+	border-bottom: 1px solid rgba(0,0,0,0.5);
+	padding: 1em;
+	cursor: pointer;
+
+}
+
+.contact-name {
+
+	font-weight: bold;
+	
+}
+
+#searchBox {
+
+	width: 100%;
+	height: 100%;
+	display: block;
+    vertical-align: center;
+	padding: 10px;
+	border: solid 5px #c9c9c9;
+	box-shadow: inset 0 0 0 1px #707070;
+	transition: box-shadow 0.3s, border 0.3s;
+
+}
+
+#searchBox:focus,
+#searchBox.focus {
+
+border: solid 5px #969696;
+outline: none;
+
+}
+
+.contact:hover {
+
+	background-color: #C0C0C0;
+
+}
+
+.who-am-i {
+
+	height: 100px;
+	width: 100%;
+	border-bottom: solid black;
+
+}
