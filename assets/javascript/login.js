@@ -12,6 +12,7 @@ $(document).ready(function(){
 		    	function(data, status){
 		    		if(!jQuery.isEmptyObject(data))
 		    		{
+		    			console.log(data)
 		    			redirect()
 		    			
 		    		}

@@ -1,0 +1,33 @@
+h1 {
+  font-family: Arial;
+  font-weight: bold;
+  color: #FFFFFF;
+  margin-bottom: 1em;
+  text-shadow: 1px 1px black;
+  text-align: center;
+}
+
+body{
+  background-color: #388E3C;
+}
+.vertical{
+  padding: 20%;
+  vertical-align: middle;
+}
+
+form-control {
+  margin-bottom: 12em;
+}
+
+.btn-login {
+  width: 100%;
+  margin-top: 1em;
+  background-color: #4CAF50;
+  color: white;
+}
+
+.btn-login:hover{
+  background-color: #C8E6C9;
+
+}
+

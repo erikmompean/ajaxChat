@@ -55,8 +55,45 @@
             echo json_encode($_SESSION["myuser"]);
             break;
         case 3:
+            $myUser = (int)$_GET['myId'];
+            $otherUser = (int)$_GET['otherId'];
+            $array = array();
+            $result = mysqli_query($conn, "SELECT * FROM `messages` WHERE sender LIKE $myUser AND receiver LIKE $otherUser OR sender LIKE $otherUser AND receiver LIKE $myUser");
 
+            while($i = mysqli_fetch_assoc($result)){
+                $array[] = $i;
+            }
+            echo json_encode($array);
+            
+            break;
+        case 4:
 
+            echo json_encode($_SESSION["myuser"]);
+            break;
+
+        case 5:
+        
+            $sender = (int)$_GET['sender'];
+            $receiver = (int)$_GET['receiver'];
+            $text = $_GET['text'];
+            $sql = "INSERT INTO `messages` (`message_id`, `sender`, `receiver`, `text`) VALUES (NULL, $sender, $receiver, '$text');";
+            if (mysqli_query($conn, $sql)) {
+                echo "New record created successfully";
+            } else {
+                echo "Error: " . $sql . "<br>" . mysqli_error($conn);
+            }
+
+            break;
+        case 6:
+                //
+            $id = (int)$_GET['id'];
+            $array = array();
+            $result = mysqli_query($conn, "SELECT * FROM `users` WHERE user_id LIKE $id");
+
+            while($i = mysqli_fetch_assoc($result)){
+                $array[] = $i;
+            }
+            echo json_encode($array);
             break;
     }
     

@@ -29,6 +29,7 @@
 	height: 100px;
 	width: 100%;
 	border-bottom: solid black;
+	background-color: #4CAF50;
 
 }
 
@@ -76,8 +77,111 @@ outline: none;
 
 .who-am-i {
 
-	height: 100px;
+	padding: 2%;
+	height: 7vh;
 	width: 100%;
 	border-bottom: solid black;
+	background-color: #C8E6C9;
 
+}
+
+#chatContent{
+	height: 87vh;
+	width: 100%;
+	overflow-y:scroll;
+	background-image: url('./assets/images/background.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+/*new*/
+.message {
+	display: block;
+	padding: 7px;
+	margin: 0 !important;
+
+}
+
+.other-message {
+
+	margin-bottom: 5px;
+	margin-top: 5px;
+	border-radius: 7px;
+	background-color: #C8E6C9;
+	margin-left: 7px;
+	width: auto;
+	display: table;
+
+}
+
+.my-message {
+
+	float: right;
+	margin-bottom: 5px;
+	margin-top: 5px;
+	background-color: #388E3C;
+	border-radius: 7px;
+	color: white;
+	margin-right: 7px;
+	margin-left: 7px;
+	width: auto;
+	display: table;
+
+}
+
+.time {
+
+	font-size: 80%;
+	color: #c0c0c0;
+
+}
+.cap {
+	height: 50px;
+	width: 100%;
+	display:table;
+}
+
+/*most new*/
+
+.bot-chat {
+
+	height: 6vh;
+	bottom: 0;
+	border-left:1px solid rgba(0,0,0,0.2);
+
+	background-color: #C8E6C9;
+	
+}
+
+#textSender {
+
+	margin-left: 8%;
+	margin-top: 1%;
+	height: 70%;
+	width: 80%;
+	border-radius: 5px;
+	appearance:none;
+	border: solid 1px #dcdcdc;
+	transition: box-shadow 0.3s, border 0.3s;
+	padding-left: 20px;
+
+}
+
+#textSender:focus,
+#textSender.focus {
+
+ 	border: solid 1px #3F51B5;
+  	box-shadow: 0 0 5px 1px #3F51B5;
+	outline: none;
+
+}
+
+#sendBtn{
+
+	margin-left: 2%;
+	cursor: pointer;
+
+}
+
+.top-text {
+	font-weight: bold;
 }
